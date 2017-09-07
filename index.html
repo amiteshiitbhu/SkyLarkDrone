@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label{
+	display:inline-block;
+	width:100px;
+	margin-bottom:10px;
+}
+
+input[type=text], select {
+    width: 15%;
+    padding: 10px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #FF6347;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #FF6347;
+    color: #9999ff ;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FF6347;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #FF6347;
+    padding: 20px;
+}
+body {
+    background-image:    url(http://localhost/Category/Project/w3s.png);
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;    
+}
+</style>
+ 
+</style>
+<title>Add Details Of City</title>
+</head>
+
+<body>
+
+<form method="post" action="include.php">
+
+<label>NAME</label>
+<input type="text" name="name">
+<br />
+
+<label>PROPERTY DETAILS</label>
+<input type="text" name="description" />
+<br />
+
+<label>Latitude</label>
+<input type="text" name="lat" />
+<br />
+
+<label>Longitude</label>
+<input type="text" name="long" />
+<br />
+
+<label>Manufacturing Year</label>
+<input type="text" name="year" />
+<br />
+
+<button type="submit"  >Add Details of the Database</button>
+
+</form>
+
+<br> </br>
+
+<form method="post" action="show.php">
+	<button type="submit"  >Show All Details Table Wise</button>
+</form>
+
+<br> </br>
+<form method="post" action="yearwise.php">
+<label>Enter Year</label>
+<input type="text" name="year" />
+<button type="submit"  >View Year Wise Detail</button>
+</form>
+
+<br> </br>
+<form method="post" action="viewmap.php">
+<button type="submit"  >View All Data On Map</button>
+</form>
+<br> </br>
+
+<form method="post" action="viewyearvisemap.php">
+<label>Enter Year</label>
+<input type="text" name="year" />
+<button type="submit"  >View Year Wise on Map</button>
+</form>
+
+
+</body>
+</html>
